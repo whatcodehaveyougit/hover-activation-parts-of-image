@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.floorplan-container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.l-one-overlay {
+    position: absolute;
+    top: 18.5%;
+    bottom: 0;
+    left: 8.9%;
+    right: 0;
+    height: 54.5%;
+    width: 22%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+.l-one-overlay-b {
+    position: absolute;
+    top: 57%;
+    bottom: 18%;
+    left: -9%;
+    right: 36px;
+    height: 40.5%;
+    width: 13%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+.l-one-overlay-c {
+    position: absolute;
+    top: 99%;
+    bottom: 0%;
+    left: 36.5%;
+    right: 0;
+    height: 7.5%;
+    width: 63.5%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+.l-one-overlay-r2 {
+    position: absolute;
+    top: 18.5%;
+    bottom: 0%;
+    left: 33.5%;
+    right: 0;
+    height: 28.5%;
+    width: 44%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+.l-one-overlay-r2-a {
+    position: absolute;
+    top: -19%;
+    bottom: 0%;
+    left: -7%;
+    right: 0;
+    height: 22.5%;
+    width: 36%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+.l-one-overlay-r2-b {
+    position: absolute;
+    top: -19%;
+    bottom: 0%;
+    left: -6.5%;
+    right: 0;
+    height: 22.5%;
+     width: 36%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+.l-one-overlay-r2-b {
+    position: absolute;
+    top: -19%;
+    bottom: 0%;
+    left:-8.5%;
+    right: 0;
+    height: 22.5%;
+    width: 38%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+.l-one-overlay-r2-c {
+    position: absolute;
+    top: -19%;
+    bottom: 0%;
+    left: 57.5%;
+    right: 0;
+    height: 22.5%;
+    width: 38%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+.l-one-overlay-r3 {
+    position: absolute;
+    top: 50%;
+    bottom: 0%;
+    left: 37.5%;
+    right: 0px;
+    height: 30.5%;
+    width: 41%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+.l-one-overlay-r3-a {
+    position: absolute;
+    top: 100%;
+    bottom: 0%;
+    left: 60.5%;
+    right: 0;
+    height: 19.5%;
+    width: 35%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+.l-one-overlay-r3-b {
+    position: absolute;
+    top: 100%;
+    bottom: 0%;
+    left: 5.5%;
+    right: 0;
+    height: 19.5%;
+    width: 34%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+.l-one-overlay:hover {
+  opacity: 1;
+}
+
+.l-one-overlay:click {
+  opacity: 1;
+}
+
+.l-one-overlay:hover .l-one-overlay-b {
+  opacity: 1;
+}
+
+.l-one-overlay:hover .l-one-overlay-c {
+  opacity: 1;
+} 
+/*Level 1 Room 2*/
+
+.l-one-overlay-r2:hover {
+  opacity: 1;
+}
+
+.l-one-overlay-r2:hover .l-one-overlay-r2-b {
+  opacity: 1;
+}
+
+.l-one-overlay-r2:hover .l-one-overlay-r2-c {
+  opacity: 1;
+} 
+
+.l-one-overlay-r3:hover {
+  opacity: 1;
+}
+
+.l-one-overlay-r3:hover .l-one-overlay-r3-a {
+  opacity: 1;
+}
+
+.l-one-overlay-r3:hover .l-one-overlay-r3-b {
+  opacity: 1;
+} 
+
+.l-one-overlay-r3:hover .l-one-overlay-r3-c {
+  opacity: 1;
+} 
+
+
+.text {
+  color: white;
+  font-family: inherit;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+
+<h2>Fade in Overlay</h2>
+<p>Hover over the image to see the effect.</p>
+
+<div class="floorplan-container">
+  <img src="site-plan.png" alt="Avatar" class="image">
+  <a href="#" class="l-one-overlay"><div class="text">28.5m x 15.5m</div>
+     <div class="l-one-overlay-b">
+      </div>
+    <div class="l-one-overlay-c">
+    </div>
+  </a>
+
+ <a href="#" class="l-one-overlay-r2"><div class="text">28.5m x 15.5m</div>
+     <div class="l-one-overlay-r2-a">
+      </div>
+    <div class="l-one-overlay-r2-b">
+    </div>
+    <div class="l-one-overlay-r2-c">
+    </div>
+  </a>
+
+ <a href="#" class="l-one-overlay-r3"><div class="text">28.5m x 15.5m</div>
+     <div class="l-one-overlay-r3-a">
+      </div>
+    <div class="l-one-overlay-r3-b">
+    </div>
+    <div class="l-one-overlay-r3-c">
+    </div>
+  </a>
+
+
+</div>  <!-- container -->
+
+
+</body>
+</html>
